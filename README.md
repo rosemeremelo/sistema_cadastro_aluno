@@ -19,4 +19,4 @@ Este projeto foi documentado utilizando a **Análise de Pontos de Função (APF)
 ## 📱 Como rodar o projeto
 1. Clone o repositório.
 2. Abra o arquivo `index.html` em qualquer navegador moderno.
-3. Ou acesse pelo link do GitHub Pages: 
+3. Ou acesse pelo link do GitHub Pages: https://rosemeremelo.github.io/sistema_cadastro_aluno/

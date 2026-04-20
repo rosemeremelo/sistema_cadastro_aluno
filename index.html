@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Alunos</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <main class="container">
+        <h1>Cadastro de Alunos</h1>
+        <div id="mensagem-feedback" class="hidden"></div>
+
+        <section class="form-section">
+            <form id="form-aluno">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" placeholder="Digite o nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="matricula">Matrícula:</label>
+                    <input type="number" id="matricula" placeholder="Ex: 2024001" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="aluno@escola.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="turma">Turma:</label>
+                    <select id="turma" required>
+                        <option value="">Selecione uma turma</option>
+                        <option value="A">Turma A</option>
+                        <option value="B">Turma B</option>
+                        <option value="C">Turma C</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-cadastrar">Cadastrar Aluno</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="table-section">
+            <h2>Alunos Cadastrados</h2>
+            <table id="tabela-alunos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Matrícula</th>
+                        <th>E-mail</th>
+                        <th>Turma</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
